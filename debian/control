@@ -1,0 +1,17 @@
+Source: glassplayer
+Section: unknown
+Priority: optional
+Maintainer: Alejandro Olivan Alvarez <alejandro.olivan.alvarez@gmail.com>
+Build-Depends: debhelper (>= 11), autotools-dev
+Standards-Version: 4.1.3
+Homepage: https://github.com/RadioFreeAsia/GlassPlayer
+Vcs-Browser: https://github.com/RadioFreeAsia/GlassPlayer
+Vcs-Git: https://github.com/RadioFreeAsia/GlassPlayer
+
+Package: glassplayer
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, libsamplerate0, libtag1v5, libfdk-aac2, lame, libmad0, libvorbis0a, libopus0, libsndfile1
+Recommends: libasound2
+Suggests: jackd2
+Description: GlassPlayer is a minimalist audio stream player
+ GlassPlayer is a minimalist audio stream player for IceCast and Shoutcast streaming servers as well as HLS streams.
